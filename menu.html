@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Moreno Pizza - Menu</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Klarna-->
+        <script 
+        src="https://x.klarnacdn.net/express-button/v1/lib.js"
+        data-id="<mid>"
+        data-environment="playground"
+        async
+        ></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/mystyles.css"/>
+    </head>
+    <body class="bgcolor">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/morenologo.png" alt="morenologo" height="20"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#pizza">Order Pizza</a>
+                        <li class="nav-item"><a class="nav-link" href="#booking">Book a table</a>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Welcome view -->
+        <header class="menuview" id="menu">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                            <a class="btn btn-dark text-wheat" href="#pizza">Order Pizza</a>
+                            <a class="btn btn-dark text-wheat" href="#booking">Book a table</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Booking view -->
+        <header class="bookingview" id="booking">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                        <div class="elfsight-app-a388878f-b9cc-4dbd-b7fc-f671cec83a06" data-elfsight-app-lazy></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About-->
+        <section class="about-section text-center" id="pizza">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-wheat mb-4">Purchase pizzas right to your table</h2>
+                        <p class="text-wheat">
+                            Welcome to the ultimate pizza experience!<br>
+                            At our website, we've redefined the way you enjoy your favorite pizzas. 
+                            Now, you can savor the delicious flavors right at your table without leaving the comfort of your seat. 
+                            Our streamlined online ordering system allows you to effortlessly browse through a tempting array of pizzas, 
+                            customize your toppings, and place your order with just a few clicks.
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+            </div>
+        </section>
+
+        <!-- Pizzas-->
+>
+    <div class="container px-4 px-lg-5">
+
+        <div class="row gx-0 justify-content-center">
+            <section class="projects-section" id="pizzas">
+                <div class="container px-4 px-lg-5">
+                    <h1 style="text-align: center; padding-bottom: 30px; color: wheat;">Pizzas</h1>
+                    <div class="row gx-0 justify-content-center" id="pizzaContainer">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    
+    <!-- Shoppingcart -->
+    <div id="displayShoppingCart" style="display: flex; justify-content: center; align-items: center; ">
+        <div class="row px-12" style="background-color: black; text-align: center;">
+            <h1 class="text-wheat" style="margin-top: 100px;">Your order:</h1>
+            <div id="cartItemsContainer"></div>
+            <h4 id="totalPrice" class="text-wheat">Total: 0:-</h4>
+            <div style="margin-top: 75px;">
+                <klarna-express-button data-locale="en-US" data-theme="dark" />
+            </div>
+        </div>
+    </div>
+    
+    
+        
+        
+
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Forsmans 2023</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
